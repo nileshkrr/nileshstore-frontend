@@ -67,6 +67,9 @@ function AppRoutes() {
       <Route path="/login" element={<GuestRoute><AppLayout><LoginPage /></AppLayout></GuestRoute>} />
       <Route path="/register" element={<GuestRoute><AppLayout><RegisterPage /></AppLayout></GuestRoute>} />
 
+      <Route path="/forgot-password" element={<GuestRoute><AppLayout><ForgotPasswordPage /></AppLayout></GuestRoute>} />
+<Route path="/reset-password/:token" element={<GuestRoute><AppLayout><ResetPasswordPage /></AppLayout></GuestRoute>} />
+
       {/* Protected user routes */}
       <Route path="/cart" element={<ProtectedRoute><AppLayout><CartPage /></AppLayout></ProtectedRoute>} />
       <Route path="/checkout" element={<ProtectedRoute><AppLayout><CheckoutPage /></AppLayout></ProtectedRoute>} />
