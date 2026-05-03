@@ -72,7 +72,11 @@ export const toggleUserStatus = (id) => API.put(`/admin/users/${id}/toggle`);
 export const createRazorpayOrder = (data) => API.post('/payment/create-order', data);
 export const verifyPayment = (data) => API.post('/payment/verify', data);
 
-export const resetPassword = (token, password) =>
-  API.put(`/auth/reset-password/${token}`, { password });
+// Forgot Password
+export const forgotPassword = (data) =>
+  API.post('/auth/forgot-password', data);
 
+// Reset Password
+export const resetPassword = (token, data) =>
+  API.put(`/auth/reset-password/${token}`, data);
 export default API;
