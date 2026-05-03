@@ -6,7 +6,7 @@ export default function CartPage() {
   const { cart, updateItem, removeItem, loading } = useCart();
   const navigate = useNavigate();
 
-  const shippingPrice = cart.totalPrice > 999 ? 0 : 99;
+  const shippingPrice = 0;
   const taxPrice = Math.round(cart.totalPrice * 0.18);
   const grandTotal = cart.totalPrice + shippingPrice + taxPrice;
 

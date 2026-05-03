@@ -25,7 +25,7 @@ export default function CheckoutPage() {
   });
   const [errors, setErrors] = useState({});
 
-  const shippingPrice = cart.totalPrice > 999 ? 0 : 99;
+  const shippingPrice = 0;
   const taxPrice = Math.round(cart.totalPrice * 0.18);
   const grandTotal = cart.totalPrice + shippingPrice + taxPrice;
 
