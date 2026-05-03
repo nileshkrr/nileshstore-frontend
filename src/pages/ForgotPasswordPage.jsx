@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { forgotPassword } from '../../services/api';
+import { forgotPassword } from '../services/api';
 
 // The page has three visual stages
 const STAGE = { FORM: 'form', LOADING: 'loading', SENT: 'sent' };

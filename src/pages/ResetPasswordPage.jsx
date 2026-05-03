@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { resetPassword } from '../../services/api';
+import { resetPassword } from '../services/api';
 
 const STAGE = { FORM: 'form', LOADING: 'loading', SUCCESS: 'success' };
 
