@@ -13,6 +13,7 @@ export default function ForgotPasswordPage() {
   const [devUrl, setDevUrl] = useState('');
 
   const handleSubmit = async (e) => {
+    console.log("SUBMIT CLICKED");
     e.preventDefault();
     setError('');
 
